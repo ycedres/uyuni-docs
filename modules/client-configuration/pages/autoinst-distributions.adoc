@@ -141,25 +141,25 @@ To achieve the desired result it is important to understand the process of how k
 
 === Examples ===
 
-==== one ====
+==== Basic inheritance example  ====
 
-Distribution raw value:
+Distribution raw value
 
  install=http://uyuni.server/ks/dist/SLES15SP4 self_update=0
 
-Profile raw value: 
+Profile raw value 
 
  console=tty1
 
-System raw value: 
+System raw value 
 
  console=ttyS0
 
-Resolved value for a system inheriting this profile:
+*Resolved* value for a system inheriting this profile
  
  install=http://uyuni.server/ks/dist/SLES15SP4 self_update=0 console=ttyS0
 
-==== two ====
+==== Option removal example  ====
 
 Distribution raw value
 
@@ -173,7 +173,7 @@ System raw value
  
  !self_update
 
-Resolved value for a system inheriting this profile
+*Resolved* value for a system inheriting this profile
 
  install=http://uyuni.server/ks/dist/SLES15SP4 console=ttyS0
 
